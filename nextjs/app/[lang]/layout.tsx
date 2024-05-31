@@ -11,9 +11,10 @@ import {
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Providers } from '@/components/Providers';
-import { getLanguagesStaticParams, i18n } from '@/i18n/helpers';
 import { ReactNode } from 'react';
 import { I18nProps } from '@/types/types';
+import { getLanguagesStaticParams, i18n } from '@/i18n/helpers';
+
 
 export const generateStaticParams = getLanguagesStaticParams;
 const inter = Inter({ subsets: ['latin'] });
@@ -28,10 +29,11 @@ type RootLayoutProps = {
   params: I18nProps;
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: { lang },
 }: RootLayoutProps) {
+
   return (
     <html lang={lang}>
       <head>

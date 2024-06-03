@@ -14,7 +14,7 @@ import { Providers } from '@/components/Providers';
 import { ReactNode } from 'react';
 import { I18nProps } from '@/types/types';
 import { getLanguagesStaticParams, i18n } from '@/i18n/helpers';
-
+import { Header } from '@/components/Header/Header';
 
 export const generateStaticParams = getLanguagesStaticParams;
 
@@ -34,7 +34,6 @@ export default async function RootLayout({
   children,
   params: { lang },
 }: RootLayoutProps) {
-
   return (
     <html lang={lang}>
       <head>
@@ -50,14 +49,14 @@ export default async function RootLayout({
               zIndex={250}
             >
               <Container maw={'100%'} pl={24} pr={24}>
-                HEADER
+                <Header lang={lang} />
               </Container>
             </AppShellHeader>
             <AppShellMain pos={'relative'} mt={{ base: 0, md: 77 }}>
               {children}
             </AppShellMain>
             <AppShellFooter withBorder={false} pos={'static'}>
-              FOOTER
+              <Container>FOOTER</Container>
             </AppShellFooter>
           </AppShell>
         </Providers>

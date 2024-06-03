@@ -24,4 +24,3 @@ Usage Instructions
 To run each project, navigate to the appropriate folder and run the commands npm install and then npm run dev. This will install the dependencies and start a local server. You can then open the web page in your browser and start testing the project.
 Analysis and Conclusions
 
-After testing all three projects, the results should be collected and conclusions drawn. The results should be compared in terms of bundle size, render time, performance, functionality, and ease of use. Any other factors that may impact the choice of framework, such as project budget and timeline, should also be considered.

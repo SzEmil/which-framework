@@ -29,32 +29,31 @@ const shapeOutline: MantineColorsTuple = [
 ];
 
 const themePrimary: MantineColorsTuple = [
-  '#5A4098',
-  '#f4f0ff',
-  '#e3def3',
-  '#c5b9e2',
-  '#a592d0',
-  '#8971c1',
-  '#5A4098',
-  '#785cb9',
-  '#7052b5',
-  '#5f43a0',
-  '#543b90',
-  '#483180',
+  "#30e78b",
+  "#e3fff2",
+  "#d0fbe5",
+  "#a3f6cc",
+  "#73efb1",
+  "#4aea9a",
+  "#30e78b",
+  "#1de583",
+  "#05cb70",
+  "#00b662",
+  "#009d52"
 ];
 
 const themeSecondary: MantineColorsTuple = [
-  '#FF7050',
-  '#ffebe6',
-  '#ffd7ce',
-  '#ffae9b',
-  '#ff8164',
-  '#fe5b37',
-  '#fe4319',
-  '#ff3609',
-  '#e42700',
-  '#cb2100',
-  '#b11500',
+  "#8b8b8b",
+  "#f5f5f5",
+  "#e7e7e7",
+  "#cdcdcd",
+  "#b2b2b2",
+  "#9a9a9a",
+  "#8b8b8b",
+  "#848484",
+  "#717171",
+  "#656565",
+  "#575757"
 ];
 
 const grayscale1: MantineColorsTuple = [
@@ -175,6 +174,20 @@ const shapeOutlineActive: MantineColorsTuple = [
   '#483180',
 ];
 
+const supportColor: MantineColorsTuple = [
+  "#91749f",
+  "#f6f2f7",
+  "#e7e3e9",
+  "#cec4d3",
+  "#b5a2be",
+  "#9e85ab",
+  "#91749f",
+  "#8b6a9a",
+  "#785987",
+  "#6a4e79",
+  "#5d436b"
+];
+
 export const colors = {
   grayscaleWhite,
   shapeOutline,
@@ -188,4 +201,5 @@ export const colors = {
   shapeIcon,
   shapeLine,
   shapeOutlineActive,
+  supportColor
 };

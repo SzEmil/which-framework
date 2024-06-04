@@ -1,0 +1,9 @@
+.icon {
+  padding: 5px;
+  background-color: var(--mantine-color-grayscale1-1);
+  border-radius: 50%;
+  transition: background-color 200ms ease;
+}
+.icon:hover {
+  background-color: var(--mantine-color-grayscale1-3);
+}

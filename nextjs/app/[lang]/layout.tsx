@@ -15,11 +15,18 @@ import { ReactNode } from 'react';
 import { I18nProps } from '@/types/types';
 import { getLanguagesStaticParams, i18n } from '@/i18n/helpers';
 import { Header } from '@/components/Header/Header';
+import { Roboto } from 'next/font/google';
+import { Footer } from '@/components/Footer/Footer';
 
 export const generateStaticParams = getLanguagesStaticParams;
 
 const inter = Inter({ subsets: ['latin'] });
-
+const roboto = Roboto({
+  display: 'swap',
+  weight: ['100', '300', '400', '500', '700', '900'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+});
 export const metadata: Metadata = {
   title: 'Minfdev',
   description: 'Buisness and ecomerence solutions',
@@ -38,25 +45,31 @@ export default async function RootLayout({
     <html lang={lang}>
       <head>
         <ColorSchemeScript />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
+        />
       </head>
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <Providers>
           <AppShell>
             <AppShellHeader
               pos={{ base: 'static', md: 'fixed' }}
               withBorder={false}
-              style={{ boxShadow: '0px 2px 8px 0px rgba(0, 0, 0, 0.12)' }}
+              style={{ boxShadow: '0px 2px 8px 0px rgba(0, 0, 0, 0.05)' }}
+              bg={'supportColor.1'}
               zIndex={250}
             >
-              <Container maw={'100%'} pl={24} pr={24}>
+              <Container>
                 <Header lang={lang} />
               </Container>
             </AppShellHeader>
-            <AppShellMain pos={'relative'} mt={{ base: 0, md: 77 }}>
-              {children}
-            </AppShellMain>
+            <AppShellMain pos={'relative'}>{children}</AppShellMain>
             <AppShellFooter withBorder={false} pos={'static'}>
-              <Container>FOOTER</Container>
+              <Container>
+                <Footer lang={lang} />
+              </Container>
             </AppShellFooter>
           </AppShell>
         </Providers>

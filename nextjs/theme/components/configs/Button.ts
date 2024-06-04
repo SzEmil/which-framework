@@ -2,13 +2,14 @@ import { Button as ButtonConfig } from "@mantine/core";
 
 export const Button = ButtonConfig.extend({
   defaultProps: {
-    color: "themePrimary.6",
+    color: "grayscale1.1",
     variant: "filled",
-    fz: 14,
-    fw: 600,
-    pt: 6,
-    pb: 6,
-    pl: 12,
-    pr: 12,
+    fz: 16,
+    fw: 500,
+    pt: 8,
+    pb: 8,
+    pl: 14,
+    pr: 14,
+    radius: "xl"
   },
 });

@@ -3,7 +3,7 @@ import { components } from "./components";
 import { colors } from "./colors";
 
 export const theme = createTheme({
-  fontFamily: "General Sans, sans-serif",
+  fontFamily: "Roboto, sans-serif",
   cursorType: "pointer",
   headings: {
     fontWeight: "600",

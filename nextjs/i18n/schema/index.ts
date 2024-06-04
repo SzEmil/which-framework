@@ -8,9 +8,40 @@ type inputErrorPhone = {
 type inputPhoneType = Omit<inputType, 'error'> & inputErrorPhone;
 
 export type ContentSchema = {
-  home: {
+  header: {
     nav: {
-      home: string;
+      whatCanWeOffer: string;
+      caseStudies: string;
+    };
+    btn: string;
+  };
+  home: {
+    bannerHero: {
+      slogan1: string;
+      slogan2: string;
+    };
+    aboutUs: {
+      slogan: string
+    }
+  };
+  footer: {
+    nav: {
+      offer: {
+        title: string;
+        whatWeCanDo: string;
+        ourProcess: string;
+      };
+      caseStudies: {
+        title: string;
+      };
+    };
+    contactForm: {
+      title: string;
+      form: {
+        error: string;
+        placeholder: string;
+        btn: string;
+      };
     };
   };
 };

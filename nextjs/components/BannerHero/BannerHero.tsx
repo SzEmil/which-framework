@@ -1,9 +1,10 @@
 import { i18n } from '@/i18n/helpers';
+import { LangType } from '@/types/types';
 import { Box, Container, Flex, Stack, Text } from '@mantine/core';
 import Image from 'next/image';
 
 type BannerHeroProps = {
-  lang: string;
+  lang: LangType;
 };
 export const BannerHero = ({ lang }: BannerHeroProps) => {
   return (

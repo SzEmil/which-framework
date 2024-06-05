@@ -20,7 +20,6 @@ import { Footer } from '@/components/Footer/Footer';
 
 export const generateStaticParams = getLanguagesStaticParams;
 
-const inter = Inter({ subsets: ['latin'] });
 const roboto = Roboto({
   display: 'swap',
   weight: ['100', '300', '400', '500', '700', '900'],

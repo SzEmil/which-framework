@@ -5,9 +5,10 @@ import Link from 'next/link';
 import { ROUTES } from '@/constants/routes';
 import { FooterNavigation } from './components/FooterNavigation/FooterNavigation';
 import { Newsletter } from './components/Newsletter/Newsletter';
+import { LangType } from '@/types/types';
 
 type FooterProps = {
-  lang: string;
+  lang: LangType;
 };
 export const Footer = ({ lang }: FooterProps) => {
   return (

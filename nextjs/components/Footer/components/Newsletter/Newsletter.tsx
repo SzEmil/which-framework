@@ -5,9 +5,10 @@ import { i18n } from '@/i18n/helpers';
 import { Button, Stack, Text, TextInput } from '@mantine/core';
 import { ContactFormInitialData } from '@/hooks/useContactForm';
 import { IconArrowRight } from '@tabler/icons-react';
+import { LangType } from '@/types/types';
 
 type NewsletterProps = {
-  lang: string;
+  lang: LangType;
 };
 export const Newsletter = ({ lang }: NewsletterProps) => {
   const form = useContactForm(lang);

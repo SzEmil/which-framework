@@ -2,7 +2,7 @@ import { Button as ButtonConfig } from "@mantine/core";
 
 export const Button = ButtonConfig.extend({
   defaultProps: {
-    color: "grayscale1.1",
+    color: "grayscale1.0",
     variant: "filled",
     fz: 16,
     fw: 500,

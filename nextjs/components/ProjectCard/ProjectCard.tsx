@@ -4,6 +4,7 @@ import { NextImage } from '../NextImage/NextImage';
 import { LangType, ProjectCard as ProjectCardType } from '@/types/types';
 import { IconArrowRight } from '@tabler/icons-react';
 import css from './ProjectCard.module.css';
+import { i18n } from '@/i18n/helpers';
 
 type ProjectCardProps = {
   lang: LangType;
@@ -14,6 +15,7 @@ export const ProjectCard = ({
   lang,
   project: { id, images, name, description },
 }: ProjectCardProps) => {
+  //TODO: Redirect link to route about project description
   return (
     <Card
       miw={{ base: 150, sm: 180 }}
@@ -21,7 +23,6 @@ export const ProjectCard = ({
       h={'100%'}
       padding={0}
       radius={8}
-    //  shadow="sm"
       className={css.card}
     >
       <CardSection>
@@ -58,7 +59,7 @@ export const ProjectCard = ({
           fz={16}
           rightSection={<IconArrowRight size={24} />}
         >
-          See more
+          {i18n(lang).projectCard.btn}
         </Button>
       </CardSection>
     </Card>

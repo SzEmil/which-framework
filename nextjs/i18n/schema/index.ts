@@ -21,8 +21,12 @@ export type ContentSchema = {
       slogan2: string;
     };
     aboutUs: {
-      slogan: string
-    }
+      slogan: string;
+    };
+    caseStudies: {
+      title: string;
+      btn: string;
+    };
   };
   footer: {
     nav: {
@@ -43,5 +47,8 @@ export type ContentSchema = {
         btn: string;
       };
     };
+  };
+  projectCard: {
+    btn: string;
   };
 };

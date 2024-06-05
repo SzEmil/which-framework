@@ -11,6 +11,7 @@ import { ProjectCard } from '../ProjectCard/ProjectCard';
 import { PROJECTS } from '@/constants';
 import { LangType } from '@/types/types';
 import Link from 'next/link';
+import { i18n } from '@/i18n/helpers';
 
 type CaseStudiesProps = {
   lang: LangType;
@@ -20,7 +21,7 @@ export const CaseStudies = ({ lang }: CaseStudiesProps) => {
     <Box bg={'supportColor.1'} pt={100} pb={100}>
       <Container>
         <Text fz={40} fw={700} mb={40}>
-          Case studies
+        {i18n(lang).home.caseStudies.title}
         </Text>
         <Center>
           <SimpleGrid
@@ -35,7 +36,7 @@ export const CaseStudies = ({ lang }: CaseStudiesProps) => {
         </Center>
         <Flex w={'100%'} justify={'end'}>
           <Button component={Link} mt={20} variant="outline" href={'/'}>
-            See all case studies
+            {i18n(lang).home.caseStudies.btn}
           </Button>
         </Flex>
       </Container>

@@ -18,6 +18,10 @@ export const polish: ContentSchema = {
       slogan:
         'Jesteśmy dynamicznie rozwijającym się software house, który tworzy strony internetowe szyte na miarę Twoich potrzeb. Stawiamy na szybkość działania i najnowocześniejsze technologie. Naszym celem jest dostarczanie wysoce wydajnych rozwiązań webowych, łączących innowacyjność z designem ukierunkowanym na użytkownika.',
     },
+    caseStudies: {
+      title: 'Portfolio',
+      btn: 'Zobacz wszystkie projekty',
+    },
   },
   footer: {
     nav: {
@@ -38,5 +42,8 @@ export const polish: ContentSchema = {
         btn: 'Zapisz się',
       },
     },
+  },
+  projectCard: {
+    btn: 'Zobacz więcej',
   },
 };

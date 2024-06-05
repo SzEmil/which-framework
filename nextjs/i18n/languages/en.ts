@@ -17,6 +17,10 @@ export const english: ContentSchema = {
       slogan:
         'We are an emerging software house dedicated to designing websites that cater to our clients specific needs, focusing on speed and the use of cutting-edge technologies. Our goal is to deliver high-performance web solutions that combine innovation with user-centric design.',
     },
+    caseStudies: {
+      title: 'Case studies',
+      btn: 'See all case studies',
+    },
   },
   footer: {
     nav: {
@@ -37,5 +41,8 @@ export const english: ContentSchema = {
         btn: 'Join our Newsletter',
       },
     },
+  },
+  projectCard: {
+    btn: 'See more',
   },
 };

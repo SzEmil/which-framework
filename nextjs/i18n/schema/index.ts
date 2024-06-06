@@ -5,8 +5,13 @@ type inputErrorPhone = {
     invalidNumber: string;
   };
 };
-type inputPhoneType = Omit<inputType, 'error'> & inputErrorPhone;
-
+type inputPhoneType = Omit<inputType, "error"> & inputErrorPhone;
+type timelineItem = {
+  name: string;
+  description: string;
+  category: string;
+  btn: string;
+};
 export type ContentSchema = {
   header: {
     nav: {
@@ -19,13 +24,31 @@ export type ContentSchema = {
     bannerHero: {
       slogan1: string;
       slogan2: string;
+      btn: string;
     };
     aboutUs: {
-      slogan: string;
+      slogan1: string;
+      slogan2: string;
     };
     caseStudies: {
       title: string;
       btn: string;
+    };
+    ourServices: {
+      title: string;
+      btn: string;
+    };
+  };
+  offer: {
+    slogan: string;
+    ourProcess: {
+      title: string;
+      timeline: {
+        recogniseProblem: timelineItem;
+        provideSolution: timelineItem;
+        deliverProduct: timelineItem;
+        maintainSolution: timelineItem;
+      };
     };
   };
   footer: {

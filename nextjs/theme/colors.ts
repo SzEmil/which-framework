@@ -43,17 +43,16 @@ const themePrimary: MantineColorsTuple = [
 ];
 
 const themeSecondary: MantineColorsTuple = [
-  "#8b8b8b",
-  "#f5f5f5",
-  "#e7e7e7",
-  "#cdcdcd",
-  "#b2b2b2",
-  "#9a9a9a",
-  "#8b8b8b",
-  "#848484",
-  "#717171",
-  "#656565",
-  "#575757"
+  "#f3f3f7",
+  "#e4e4e6",
+  "#c6c6cf",
+  "#a7a6b7",
+  "#8c8aa2",
+  "#7c7996",
+  "#747091",
+  "#625f7f",
+  "#575472",
+  "#4a4865"
 ];
 
 const grayscale1: MantineColorsTuple = [

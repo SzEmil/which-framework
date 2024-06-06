@@ -3,6 +3,7 @@ import { Box, Flex, Stack, Text } from '@mantine/core';
 import css from './FooterNavigation.module.css';
 import { NextLink } from '@/components/NextLink/NextLink';
 import { LangType } from '@/types/types';
+import { ROUTES } from '@/constants/routes';
 
 type FooterNavigationProps = {
   lang: LangType;
@@ -16,7 +17,7 @@ export const FooterNavigation = ({ lang }: FooterNavigationProps) => {
           {i18n(lang).footer.nav.offer.title}
         </Text>
         <Stack gap={10}>
-          <NextLink href={'/'} className={css.link}>
+          <NextLink href={ROUTES.offer} className={css.link}>
             <Text fw={400} fz={12}>
               {i18n(lang).footer.nav.offer.whatWeCanDo}
             </Text>

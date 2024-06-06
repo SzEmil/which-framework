@@ -6,6 +6,7 @@ import {
   Flex,
   SimpleGrid,
   Text,
+  Title,
 } from '@mantine/core';
 import { ProjectCard } from '../ProjectCard/ProjectCard';
 import { PROJECTS } from '@/constants';
@@ -20,9 +21,9 @@ export const CaseStudies = ({ lang }: CaseStudiesProps) => {
   return (
     <Box bg={'supportColor.1'} pt={100} pb={100}>
       <Container>
-        <Text fz={40} fw={700} mb={40}>
+        <Title order={2} fz={40} fw={700} mb={40}>
         {i18n(lang).home.caseStudies.title}
-        </Text>
+        </Title>
         <Center>
           <SimpleGrid
             cols={{ base: 1, sm: 2 }}

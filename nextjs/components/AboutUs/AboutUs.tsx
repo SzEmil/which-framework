@@ -1,6 +1,6 @@
 import { i18n } from '@/i18n/helpers';
 import { LangType } from '@/types/types';
-import { Center, Container, Text } from '@mantine/core';
+import { Box, Center, Container, Flex, Text } from '@mantine/core';
 
 type AboutUsProps = {
   lang: LangType;
@@ -8,12 +8,17 @@ type AboutUsProps = {
 
 export const AboutUs = ({ lang }: AboutUsProps) => {
   return (
+    <Box bg={"themeSecondary.9"}>
     <Container pt={100} pb={100}>
-      <Center>
-        <Text fz={40} fw={500} ta={'center'}>
-          {i18n(lang).home.aboutUs.slogan}
+      <Flex direction={"column"} gap={50}>
+        <Text fz={40} fw={500} ta={'center'} c={"themePrimary.0"}>
+          {i18n(lang).home.aboutUs.slogan1}
         </Text>
-      </Center>
+        <Text fz={40} fw={500} ta={'center'} c={"themePrimary.0"}>
+          {i18n(lang).home.aboutUs.slogan2}
+        </Text>
+      </Flex>
     </Container>
+    </Box>
   );
 };

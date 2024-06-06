@@ -1,9 +1,10 @@
 import { LangType, OurServiceCard } from '@/types/types';
-import { Button, Card, CardSection, Flex, Text } from '@mantine/core';
+import { Box, Button, Card, CardSection, Flex, Text } from '@mantine/core';
 import { NextLink } from '../NextLink/NextLink';
 import { NextImage } from '../NextImage/NextImage';
 import { IconArrowRight } from '@tabler/icons-react';
 import { i18n } from '@/i18n/helpers';
+import Link from 'next/link';
 
 type ServiceCardProps = {
   lang: LangType;
@@ -21,7 +22,7 @@ export const ServiceCard = ({
       h={'100%'}
       padding={0}
       radius={16}
-      // className={css.card}
+      style={{ flexGrow: 1 }}
     >
       <CardSection>
         <NextLink href={`/`}>
@@ -35,31 +36,52 @@ export const ServiceCard = ({
               width: '100%',
               height: 'auto',
               maxHeight: 400,
-                 aspectRatio: '1/1',
+              aspectRatio: '1/1',
             }}
           />
         </NextLink>
       </CardSection>
-      <CardSection pb={12} pl={12} pr={12}>
-        <NextLink href={`/`}>
-          <Text fz={40} fw={700} mb={10}>
-            {name[lang]}
-          </Text>
-        </NextLink>
+      <CardSection
+        pb={12}
+        pl={12}
+        pr={12}
+        h={'100%'}
+        display={'inline-flex'}
+        style={{
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          alignItems: 'flex-start',
+        }}
+      >
+        <Box>
+          <NextLink href={`/`}>
+            <Text fz={40} fw={700} mb={10}>
+              {name[lang]}
+            </Text>
+          </NextLink>
 
-          <Text fz={16} fw={400} mb={10}>
+          <Text
+            fz={16}
+            fw={400}
+            mb={10}
+            display={'flex'}
+            style={{ flexGrow: 1 }}
+          >
             {description[lang]}
           </Text>
-          <Button
-            variant="transparent"
-            autoContrast
-            type="submit"
-            fw={700}
-            fz={16}
-            rightSection={<IconArrowRight size={24} />}
-          >
-            {i18n(lang).projectCard.btn}
-          </Button>
+        </Box>
+        <Button
+          display={'inline'}
+          variant="transparent"
+          autoContrast
+          href={'/'}
+          component={Link}
+          fw={700}
+          fz={16}
+          rightSection={<IconArrowRight size={24} />}
+        >
+          {i18n(lang).home.ourServices.btn}
+        </Button>
       </CardSection>
     </Card>
   );

@@ -1,6 +1,6 @@
 import { i18n } from '@/i18n/helpers';
 import { LangType } from '@/types/types';
-import { Box, Center, Container, SimpleGrid, Text } from '@mantine/core';
+import { Box, Center, Container, SimpleGrid, Text, Title } from '@mantine/core';
 import { OUR_SERVICES } from '@/constants';
 import { ServiceCard } from '../ServiceCard/ServiceCard';
 
@@ -9,11 +9,11 @@ type OurServicesProps = {
 };
 export const OurServices = ({ lang }: OurServicesProps) => {
   return (
-    <Box bg={'supportColor.1'} pt={100} pb={100}>
+    <Box bg={'supportColor.1'}  pb={100}>
       <Container>
-        <Text fz={40} fw={700} mb={40}>
-          Our Services
-        </Text>
+        <Title order={2} fz={40} fw={700} mb={40}>
+        {i18n(lang).home.ourServices.title}
+        </Title>
         <Center>
           <SimpleGrid
             cols={{ base: 2, sm: 3 }}

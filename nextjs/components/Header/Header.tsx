@@ -13,7 +13,6 @@ export const Header = ({ lang }: HeaderProps) => {
   return (
     <Flex align={'center'} justify={'space-between'} gap={10} pt={15} pb={15}>
       <NextLink href={ROUTES.home}>
-        {' '}
         <Image
           src={'/minfdev-logo-dark.png'}
           alt="logo"
@@ -23,7 +22,7 @@ export const Header = ({ lang }: HeaderProps) => {
         />
       </NextLink>
       <Flex align={'center'} gap={50} fz={16} fw={400}>
-        <NextLink href={'/'}>
+        <NextLink href={ROUTES.offer}>
           <Text>{i18n(lang).header.nav.whatCanWeOffer}</Text>
         </NextLink>
         <NextLink href={'/'}>

@@ -2,12 +2,7 @@
 import { i18n } from "@/i18n/helpers";
 import { LangType } from "@/types/types";
 import { Button, Flex, Timeline as MantineTimeline, Text, TimelineItem } from "@mantine/core";
-import {
-  IconGitBranch,
-  IconGitPullRequest,
-  IconGitCommit,
-  IconMessageDots,
-} from "@tabler/icons-react";
+import { IconGitBranch, IconArrowRight } from "@tabler/icons-react";
 import Link from "next/link";
 import { ContentSchema } from "@/i18n/schema";
 import { nanoid } from "nanoid";
@@ -45,7 +40,15 @@ export const Timeline = ({ lang }: TimelineProps) => {
               {timeLineData[step as TimelineKeys].category}
             </Text>
           </Flex>
-          <Button fz={16} fw={700} component={Link} href={"/"} variant="transparent">
+          <Button
+            fz={16}
+            fw={700}
+            component={Link}
+            href={"/"}
+            variant="transparent"
+            rightSection={<IconArrowRight size={14} />}
+            mt={20}
+          >
             {timeLineData[step as TimelineKeys].btn}
           </Button>
         </TimelineItem>

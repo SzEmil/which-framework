@@ -1,0 +1,13 @@
+.timeline {
+  color: var(--mantine-color-grayscale1-5);
+}
+.timeline:hover {
+  cursor: pointer;
+}
+.timeline-active {
+  color: var(--mantine-color-grayscale1-1);
+}
+.itemTitle {
+    font-size: 24px;
+    font-weight: 700;
+}

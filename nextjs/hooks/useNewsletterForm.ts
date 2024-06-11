@@ -6,24 +6,19 @@ type ValidateData = {
 };
 
 export type ContactFormInitialData = {
-  name: string;
   email: string;
-  message: string;
   error?: any;
 };
 
-export const useContactForm = (lang: string) => {
+export const useNewsletterForm = (lang: string) => {
   const initialData: ContactFormInitialData = {
-    name: "",
     email: "",
-    message: "",
     error: null,
   };
 
   const validateData: ValidateData = {
-    email: (value) => (/^\S+@\S+$/.test(value) ? null : i18n(lang).footer.contactForm.form.error),
-    // name: (value) => (value.length === 0 ? i18n(lang).contactForm.message.error : null),
-    // message: (value) => (value.length === 0 ? i18n(lang).contactForm.message.error : null),
+    email: (value) =>
+      /^\S+@\S+$/.test(value) ? null : i18n(lang).footer.contactForm.form.error,
   };
 
   return useForm({

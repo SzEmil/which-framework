@@ -1,10 +1,11 @@
-import { AboutUs } from '@/components/AboutUs/AboutUs';
-import { BannerHero } from '@/components/BannerHero/BannerHero';
-import { getLanguagesStaticParams } from '@/i18n/helpers';
-import { I18nProps } from '@/types/types';
-import { Box } from '@mantine/core';
-import { CaseStudies } from '@/components/CaseStudies/CaseStudies';
-import { OurServices } from '@/components/OurServices/OurServices';
+import { AboutUs } from "@/components/AboutUs/AboutUs";
+import { BannerHero } from "@/components/BannerHero/BannerHero";
+import { getLanguagesStaticParams } from "@/i18n/helpers";
+import { I18nProps } from "@/types/types";
+import { Box } from "@mantine/core";
+import { CaseStudies } from "@/components/CaseStudies/CaseStudies";
+import { OurServices } from "@/components/OurServices/OurServices";
+import { ContactForm } from "@/components/ContactForm/ContactForm";
 
 type Params = I18nProps;
 type PageProps = {
@@ -19,6 +20,7 @@ export default function Home({ params: { lang } }: PageProps) {
       <AboutUs lang={lang} />
       <CaseStudies lang={lang} />
       <OurServices lang={lang} />
+      <ContactForm lang={lang} />
     </Box>
   );
 }

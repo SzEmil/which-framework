@@ -1,10 +1,10 @@
-import { Button, Card, CardSection, Text } from '@mantine/core';
-import { NextLink } from '../NextLink/NextLink';
-import { NextImage } from '../NextImage/NextImage';
-import { LangType, ProjectCard as ProjectCardType } from '@/types/types';
-import { IconArrowRight } from '@tabler/icons-react';
-import css from './ProjectCard.module.css';
-import { i18n } from '@/i18n/helpers';
+import { Button, Card, CardSection, Text } from "@mantine/core";
+import { NextLink } from "../NextLink/NextLink";
+import { NextImage } from "../NextImage/NextImage";
+import { LangType, ProjectCard as ProjectCardType } from "@/types/types";
+import { IconArrowRight } from "@tabler/icons-react";
+import css from "./ProjectCard.module.css";
+import { i18n } from "@/i18n/helpers";
 
 type ProjectCardProps = {
   lang: LangType;
@@ -20,7 +20,8 @@ export const ProjectCard = ({
     <Card
       miw={{ base: 150, sm: 180 }}
       maw={550}
-      h={'100%'}
+      w={550}
+      h={550}
       padding={0}
       radius={8}
       className={css.card}
@@ -34,15 +35,15 @@ export const ProjectCard = ({
             w={200}
             h={200}
             style={{
-              width: '100%',
-              height: 'auto',
-              maxHeight: 400,
-              //   aspectRatio: '1/1',
+              width: "100%",
+              height: "100%",
+              aspectRatio: "1/1",
             }}
           />
         </NextLink>
       </CardSection>
-      <CardSection p={12} pt={8}>
+
+      <CardSection p={12} pt={20} className={css.hoverCard}>
         <NextLink href={`/`}>
           <Text fz={18} fw={700} mb={10}>
             {name}

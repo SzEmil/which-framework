@@ -1,10 +1,10 @@
-import { LangType, OurServiceCard } from '@/types/types';
-import { Box, Button, Card, CardSection, Flex, Text } from '@mantine/core';
-import { NextLink } from '../NextLink/NextLink';
-import { NextImage } from '../NextImage/NextImage';
-import { IconArrowRight } from '@tabler/icons-react';
-import { i18n } from '@/i18n/helpers';
-import Link from 'next/link';
+import { LangType, OurServiceCard } from "@/types/types";
+import { Box, Button, Card, CardSection, Flex, Text } from "@mantine/core";
+import { NextLink } from "../NextLink/NextLink";
+import { NextImage } from "../NextImage/NextImage";
+import { IconArrowRight } from "@tabler/icons-react";
+import { i18n } from "@/i18n/helpers";
+import Link from "next/link";
 
 type ServiceCardProps = {
   lang: LangType;
@@ -19,7 +19,7 @@ export const ServiceCard = ({
     <Card
       miw={{ base: 150, sm: 180 }}
       maw={550}
-      h={'100%'}
+      h={"100%"}
       padding={0}
       radius={16}
       style={{ flexGrow: 1 }}
@@ -33,10 +33,10 @@ export const ServiceCard = ({
             w={200}
             h={200}
             style={{
-              width: '100%',
-              height: 'auto',
+              width: "100%",
+              height: "auto",
               maxHeight: 400,
-              aspectRatio: '1/1',
+              aspectRatio: "1/1",
             }}
           />
         </NextLink>
@@ -45,12 +45,12 @@ export const ServiceCard = ({
         pb={12}
         pl={12}
         pr={12}
-        h={'100%'}
-        display={'inline-flex'}
+        h={"100%"}
+        display={"inline-flex"}
         style={{
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          alignItems: 'flex-start',
+          flexDirection: "column",
+          justifyContent: "space-between",
+          alignItems: "flex-start",
         }}
       >
         <Box>
@@ -60,25 +60,20 @@ export const ServiceCard = ({
             </Text>
           </NextLink>
 
-          <Text
-            fz={16}
-            fw={400}
-            mb={10}
-            display={'flex'}
-            style={{ flexGrow: 1 }}
-          >
+          <Text fz={16} fw={400} mb={10} display={"flex"} style={{ flexGrow: 1 }}>
             {description[lang]}
           </Text>
         </Box>
         <Button
-          display={'inline'}
-          variant="transparent"
-          autoContrast
-          href={'/'}
+          display={"inline"}
+          bg={"supportColor.2"}
+          c={"grayscale1.0"}
+          href={"/"}
           component={Link}
-          fw={700}
+          size="lg"
+          fw={500}
           fz={16}
-          rightSection={<IconArrowRight size={24} />}
+          rightSection={<IconArrowRight size={24} stroke={1.1} />}
         >
           {i18n(lang).home.ourServices.btn}
         </Button>

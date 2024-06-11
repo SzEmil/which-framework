@@ -1,4 +1,20 @@
+.hoverCard {
+  position: absolute;
+  bottom: -100%;
+  background-color: #f3eff5de;
+  transition: all 200ms ease;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
 .card:hover {
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.16);
   transition: box-shadow 200ms ease;
+}
+
+.card:hover .hoverCard {
+  bottom: 0;
+  z-index: 10;
 }

@@ -1,17 +1,16 @@
 'use client';
 
-import { useContactForm } from '@/hooks/useContactForm';
 import { i18n } from '@/i18n/helpers';
 import { Button, Stack, Text, TextInput } from '@mantine/core';
-import { ContactFormInitialData } from '@/hooks/useContactForm';
 import { IconArrowRight } from '@tabler/icons-react';
 import { LangType } from '@/types/types';
+import { ContactFormInitialData, useNewsletterForm } from '@/hooks/useNewsletterForm';
 
 type NewsletterProps = {
   lang: LangType;
 };
 export const Newsletter = ({ lang }: NewsletterProps) => {
-  const form = useContactForm(lang);
+  const form = useNewsletterForm(lang);
 
   const handleOnEmailSend = async (values: ContactFormInitialData) => {
     try {

@@ -29,13 +29,13 @@ export const Newsletter = ({ lang }: NewsletterProps) => {
   return (
     <Stack>
       <Text fw={500} fz={20}>
-        {i18n(lang).footer.contactForm.title}
+        {i18n(lang).footer.newsLetterForm.title}
       </Text>
       <form onSubmit={form.onSubmit(handleOnEmailSend)}>
         <TextInput
           radius={'lg'}
           withAsterisk
-          placeholder={i18n(lang).footer.contactForm.form.placeholder}
+          placeholder={i18n(lang).footer.newsLetterForm.form.placeholder}
           key={form.key('email')}
           {...form.getInputProps('email')}
         />
@@ -47,7 +47,7 @@ export const Newsletter = ({ lang }: NewsletterProps) => {
           type="submit"
           rightSection={<IconArrowRight size={14} />}
         >
-          {i18n(lang).footer.contactForm.form.btn}
+          {i18n(lang).footer.newsLetterForm.form.btn}
         </Button>
       </form>
     </Stack>

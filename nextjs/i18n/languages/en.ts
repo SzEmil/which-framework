@@ -77,7 +77,7 @@ export const english: ContentSchema = {
         title: "Case studies",
       },
     },
-    contactForm: {
+    newsLetterForm: {
       title: "Join our newsletter!",
       form: {
         error: "Incorrect email",
@@ -88,5 +88,31 @@ export const english: ContentSchema = {
   },
   projectCard: {
     btn: "See more",
+  },
+  contactForm: {
+    title: "Tell us how we can help you",
+    description:
+      "Please fill out the form or reach out to us at hello@minfdev.com, and we'll get back to you as soon as possible.",
+    form: {
+      name: {
+        error: "Your name is incorrect",
+        label: "name",
+        placeholder: "Your name",
+      },
+      email: {
+        error: "Your email is incorrect",
+        label: "email",
+        placeholder: "Your name",
+      },
+      message: {
+        error: "Your message is incorrect",
+        label: "message",
+        placeholder: "Your name",
+      },
+      optional: "Optional",
+      submitBtn: "Upload file",
+      declaration: "We care about your privacy and automatically agree to the following NDA.",
+      uploadBtn: "Submit",
+    },
   },
 };

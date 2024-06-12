@@ -62,7 +62,8 @@ export type ContentSchema = {
         title: string;
       };
     };
-    contactForm: {
+
+    newsLetterForm: {
       title: string;
       form: {
         error: string;
@@ -73,5 +74,18 @@ export type ContentSchema = {
   };
   projectCard: {
     btn: string;
+  };
+  contactForm: {
+    title: string;
+    description: string;
+    form: {
+      name: inputType;
+      email: inputType;
+      message: inputType;
+      optional: string;
+      uploadBtn: string;
+      declaration: string;
+      submitBtn: string;
+    };
   };
 };

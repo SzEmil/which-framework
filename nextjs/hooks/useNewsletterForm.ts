@@ -18,7 +18,7 @@ export const useNewsletterForm = (lang: string) => {
 
   const validateData: ValidateData = {
     email: (value) =>
-      /^\S+@\S+$/.test(value) ? null : i18n(lang).footer.contactForm.form.error,
+      /^\S+@\S+$/.test(value) ? null : i18n(lang).footer.newsLetterForm.form.error,
   };
 
   return useForm({

@@ -11,7 +11,7 @@ type CaseStudiesProps = {
 };
 export const CaseStudies = ({ lang }: CaseStudiesProps) => {
   return (
-    <Box bg={"supportColor.1"} pt={100} pb={100}>
+    <Box pt={100} pb={100}>
       <Container>
         <SectionTitle>{i18n(lang).home.caseStudies.title}</SectionTitle>
         <Center>

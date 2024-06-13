@@ -8,7 +8,7 @@ type AboutUsProps = {
 
 export const AboutUs = ({ lang }: AboutUsProps) => {
   return (
-    <Box bg={"supportColor.2"}>
+    <Box bg={"supportColor.1"}>
     <Container pt={100} pb={100}>
       <Flex direction={"column"} gap={50}>
         <Text fz={40} fw={500} ta={'center'} c={"grayscale1.0"}>

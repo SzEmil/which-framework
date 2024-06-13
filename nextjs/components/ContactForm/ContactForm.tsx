@@ -4,6 +4,7 @@ import { NextImage } from "../NextImage/NextImage";
 import { ContactUsForm } from "./components/ContactUsForm";
 import { LangType } from "@/types/types";
 import { i18n } from "@/i18n/helpers";
+import { FormImage } from "./components/FormImage";
 
 type ContactFormProps = {
   lang: LangType;
@@ -19,17 +20,7 @@ export const ContactForm = ({ lang }: ContactFormProps) => {
         </Box>
         <Flex justify={"space-between"} align={"center"} w={"100%"} gap={50} mt={20}>
           <ContactUsForm lang={lang} />
-          <NextImage
-            src={"/contact-form.png"}
-            loading="lazy"
-            alt={"people dirinking coffe"}
-            w={506}
-            h={200}
-            style={{
-              height: "auto",
-              aspectRatio: "1/1",
-            }}
-          />
+          <FormImage />
         </Flex>
       </Container>
     </Box>

@@ -11,7 +11,6 @@ type BannerHeroProps = {
 export const BannerHero = ({ lang }: BannerHeroProps) => {
   return (
     <Flex
-      bg={'supportColor.1'}
       h={'100vh'}
       align={'center'}
       justify={'center'}

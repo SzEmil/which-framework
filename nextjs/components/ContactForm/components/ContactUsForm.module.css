@@ -1,11 +1,17 @@
 .inputFile {
   width: "100%";
   color: var(--mantine-color-grayscale1-0);
-  border: 1px solid var(--mantine-color-grayscale1-5);
-  text-align: center;
+  border: 1px solid var(--mantine-color-grayscale1-2);
+  /* text-align: center; */
+
   outline: none;
   font-weight: 400;
   font-size: 16px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .input::placeholder {
   color: var(--mantine-color-grayscale1-3);
@@ -17,4 +23,8 @@
   color: var(--mantine-color-grayscale1-0);
   outline: none;
   border: 1px solid var(--mantine-color-grayscale1-5);
+}
+.inputFile > span {
+  color: var(--mantine-color-grayscale1-2);
+  font-weight: 500;
 }

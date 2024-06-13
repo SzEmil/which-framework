@@ -2,13 +2,13 @@
 
 import { i18n } from "@/i18n/helpers";
 import { Box, Button, FileInput, Stack, Text, TextInput, Textarea } from "@mantine/core";
-import { IconArrowRight } from "@tabler/icons-react";
+import { IconArrowRight, IconFile } from "@tabler/icons-react";
 import { LangType } from "@/types/types";
 import { Buffer } from "buffer";
 import { ContactFormInitialData, useContactForm } from "@/hooks/useContactForm";
-import sendEmail from "@/services/Email/operations/sendEmail";
 import { EmailTemplate } from "@/services/Email/templates";
 import css from "./ContactUsForm.module.css";
+import { sendEmail } from "@/services/Email/operations/sendEmail";
 
 type ContactUsFormProps = {
   lang: LangType;
@@ -86,9 +86,10 @@ export const ContactUsForm = ({ lang }: ContactUsFormProps) => {
           clearable
           multiple
           size="lg"
+          leftSection={<IconFile size={24} stroke={1.5} color="#303030" />}
           description={i18n(lang).contactForm.form.optional}
           {...form.getInputProps("file")}
-          classNames={{ input: css.inputFile }}
+          classNames={{ input: css.inputFile, wrapper: css.wrapper }}
         />
         <Box mt={40}>
           <Text fw={400} fz={12}>

@@ -10,6 +10,7 @@ export type ProjectCard = {
     en: string;
   };
   images: string[];
+  baner:string
 };
 
 export type OurServiceCard = {

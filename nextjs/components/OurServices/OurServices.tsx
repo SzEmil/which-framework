@@ -10,7 +10,7 @@ type OurServicesProps = {
 };
 export const OurServices = ({ lang }: OurServicesProps) => {
   return (
-    <Box bg={"supportColor.1"} pb={100}>
+    <Box bg={"supportColor.1"} pb={100} pt={100}>
       <Container>
         <SectionTitle>{i18n(lang).home.ourServices.title}</SectionTitle>
         <Center>

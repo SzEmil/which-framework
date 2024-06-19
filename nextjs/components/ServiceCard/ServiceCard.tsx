@@ -66,8 +66,7 @@ export const ServiceCard = ({
         </Box>
         <Button
           display={"inline"}
-          bg={"supportColor.2"}
-          c={"grayscale1.0"}
+          c={"themePrimary.0"}
           href={"/"}
           component={Link}
           size="lg"

@@ -25,7 +25,8 @@ export const PROJECTS: ProjectCard[] = [
       pl: "Mobilna aplikacja webowa usprawniająca zarządzanie firmą wynajmującą fachowców do różnych napraw. Aplikacja zapewnia efektywne planowanie i komunikację, oferuje aktualizacje w czasie rzeczywistym dotyczące postępów w pracy oraz integruje systemy fakturowania i płatności, umożliwiając płynne transakcje.",
       en: "Mobile web application for streamlines the management of a company that rents out professionals for various repairs, ensuring efficient scheduling and communication. It provides real-time updates on job progress and integrates invoicing and payment systems for seamless transactions.",
     },
-    images: ["/case-studies-spec.png", "/prezentydlaciebie1.png"],
+    images: ["/case-studies-spec.png"],
+    baner: "/specNaGodziny-baner.png",
   },
   {
     id: 1,
@@ -35,6 +36,7 @@ export const PROJECTS: ProjectCard[] = [
       en: "Minfcomerence is an innovative e-commerce platform designed to meet the needs of modern sellers. Our goal is to support your business and make it easier for you to reach a wider audience.",
     },
     images: ["/case-studies-minfdev.png", "/prezentydlaciebie1.png"],
+    baner: "/specNaGodziny-baner.png",
   },
 ];
 

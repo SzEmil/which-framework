@@ -25,11 +25,6 @@ export const CaseStudies = ({ lang }: CaseStudiesProps) => {
             ))}
           </SimpleGrid>
         </Center>
-        <Flex w={"100%"} justify={"end"}>
-          <Button component={Link} mt={40} variant="outline" href={"/"}>
-            {i18n(lang).home.caseStudies.btn}
-          </Button>
-        </Flex>
       </Container>
     </Box>
   );

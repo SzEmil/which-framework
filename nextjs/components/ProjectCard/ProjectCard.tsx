@@ -54,6 +54,7 @@ export const ProjectCard = ({
         </Text>
         <Button
           variant="transparent"
+          bg="transparent"
           autoContrast
           type="submit"
           fw={700}

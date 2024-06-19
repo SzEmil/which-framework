@@ -68,6 +68,11 @@ export const polish: ContentSchema = {
   },
   footer: {
     nav: {
+      termsAndConditions: {
+        title: "Regulamin i warunki",
+        terms: "Regulamin i warunki",
+        nda: "NDA"
+      },
       offer: {
         title: "Nasza oferta",
         whatWeCanDo: "Co możemy dla Ciebie zrobić",
@@ -114,7 +119,7 @@ export const polish: ContentSchema = {
       optional: "Opcjonalnie",
       submitBtn: "Wyślij",
       declaration:
-        "Dbamy o Twoją prywatność i automatycznie zgadzamy się na następującą umowę o poufności (NDA).",
+        "Dbamy o Twoją prywatność i automatycznie zgadzamy się na następującą umowę o poufności",
       uploadBtn: "Prześlij plik",
     },
   },

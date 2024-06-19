@@ -9,6 +9,7 @@ import { ContactFormInitialData, useContactForm } from "@/hooks/useContactForm";
 import { EmailTemplate } from "@/services/Email/templates";
 import css from "./ContactUsForm.module.css";
 import { sendEmail } from "@/services/Email/operations/sendEmail";
+import { NextLink } from "@/components/NextLink/NextLink";
 
 type ContactUsFormProps = {
   lang: LangType;
@@ -93,14 +94,17 @@ export const ContactUsForm = ({ lang }: ContactUsFormProps) => {
         />
         <Box mt={40}>
           <Text fw={400} fz={12}>
-            {i18n(lang).contactForm.form.declaration}
+            {i18n(lang).contactForm.form.declaration}{" "}
+            <NextLink c="blue" fw={400} fz={12} href="/">
+              NDA.
+            </NextLink>
           </Text>
           <Button
             mt={10}
             w={"100%"}
-            bg={"supportColor.1"}
-            c={"grayscale1.0"}
             type="submit"
+            variant="filled"
+            c={"themePrimary.0"}
             fw={500}
             size="md"
             rightSection={<IconArrowRight size={16} stroke={1.5} />}

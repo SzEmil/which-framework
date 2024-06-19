@@ -53,6 +53,11 @@ export type ContentSchema = {
   };
   footer: {
     nav: {
+      termsAndConditions: {
+        title: string;
+        terms: string;
+        nda: string;
+      };
       offer: {
         title: string;
         whatWeCanDo: string;

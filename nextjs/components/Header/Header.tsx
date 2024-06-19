@@ -33,9 +33,9 @@ export const Header = ({ lang }: HeaderProps) => {
       <Button
         component={Link}
         href={ROUTES.contact}
-        bg={"supportColor.1"}
         fw={400}
-        c={"grayscale1.0"}
+        c={"themePrimary.0"}
+        size="lg"
       >
         {i18n(lang).header.btn}
       </Button>

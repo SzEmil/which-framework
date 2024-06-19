@@ -68,6 +68,11 @@ export const english: ContentSchema = {
   },
   footer: {
     nav: {
+      termsAndConditions: {
+        title: "Terms and Conditions",
+        terms: "Terms and Conditions",
+        nda: "NDA"
+      },
       offer: {
         title: "What we can offer",
         whatWeCanDo: "What can we do for you",
@@ -111,7 +116,7 @@ export const english: ContentSchema = {
       },
       optional: "Optional",
       submitBtn: "Upload file",
-      declaration: "We care about your privacy and automatically agree to the following NDA.",
+      declaration: "We care about your privacy and automatically agree to the following",
       uploadBtn: "Submit",
     },
   },

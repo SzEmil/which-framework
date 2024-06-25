@@ -62,7 +62,7 @@ export default async function RootLayout({ children, params: { lang } }: RootLay
               </Container>
             </AppShellHeader>
             <AppShellMain pos={"relative"}>{children}</AppShellMain>
-            <AppShellFooter withBorder={false} pos={"static"}>
+            <AppShellFooter withBorder={false} pos={"static"} bg={"#F3EFF5"}>
               <Container>
                 <Footer lang={lang} />
               </Container>

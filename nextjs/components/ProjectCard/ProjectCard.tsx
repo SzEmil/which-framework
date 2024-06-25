@@ -5,6 +5,8 @@ import { LangType, ProjectCard as ProjectCardType } from "@/types/types";
 import { IconArrowRight } from "@tabler/icons-react";
 import css from "./ProjectCard.module.css";
 import { i18n } from "@/i18n/helpers";
+import { ROUTES } from "@/constants/routes";
+import Link from "next/link";
 
 type ProjectCardProps = {
   lang: LangType;
@@ -15,7 +17,6 @@ export const ProjectCard = ({
   lang,
   project: { id, images, name, description },
 }: ProjectCardProps) => {
-  //TODO: Redirect link to route about project description
   return (
     <Card
       miw={{ base: 150, sm: 180 }}
@@ -27,7 +28,7 @@ export const ProjectCard = ({
       className={css.card}
     >
       <CardSection>
-        <NextLink href={`/`}>
+        <NextLink href={`${ROUTES.project}/${id}`}>
           <NextImage
             src={images[0]}
             loading="lazy"
@@ -56,7 +57,8 @@ export const ProjectCard = ({
           variant="transparent"
           bg="transparent"
           autoContrast
-          type="submit"
+          component={Link}
+          href={`${ROUTES.project}/${id}`}
           fw={700}
           fz={16}
           rightSection={<IconArrowRight size={24} />}

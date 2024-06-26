@@ -13,7 +13,7 @@ type ServiceCardProps = {
 
 export const ServiceCard = ({
   lang,
-  service: { id, name, description, image },
+  service: { id, name, description, image, href },
 }: ServiceCardProps) => {
   return (
     <Card
@@ -25,7 +25,7 @@ export const ServiceCard = ({
       style={{ flexGrow: 1 }}
     >
       <CardSection>
-        <NextLink href={`/`}>
+        <NextLink href={href}>
           <NextImage
             src={image}
             loading="lazy"
@@ -54,7 +54,7 @@ export const ServiceCard = ({
         }}
       >
         <Box>
-          <NextLink href={`/`}>
+          <NextLink href={href}>
             <Text fz={40} fw={700} mb={10}>
               {name[lang]}
             </Text>
@@ -67,7 +67,7 @@ export const ServiceCard = ({
         <Button
           display={"inline"}
           c={"themePrimary.0"}
-          href={"/"}
+          href={href}
           component={Link}
           size="lg"
           fw={500}

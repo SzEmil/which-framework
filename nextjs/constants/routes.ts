@@ -1,6 +1,7 @@
 export enum ROUTES {
-  home = '/',
-  offer = '/offer',
+  home = "/",
+  offer = "/offer",
   contact = "/contact",
-  project= '/project'
+  project = "/project",
+  uxDesign = "/offer/ux-design",
 }

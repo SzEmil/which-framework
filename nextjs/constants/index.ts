@@ -1,6 +1,7 @@
 import { ProjectCard, OurServiceCard } from "@/types/types";
 import { IconBrandFacebook } from "@tabler/icons-react";
 import { IconBrandLinkedin } from "@tabler/icons-react";
+import { ROUTES } from "./routes";
 
 export const LANGUAGES = ["en", "pl"];
 
@@ -130,6 +131,7 @@ export const OUR_SERVICES: OurServiceCard[] = [
       en: "We empower your e-commerce business to be more efficient and profitable with our comprehensive solutions, including e-commerce store design, payment gateway integration, and digital marketing.",
     },
     image: "/services-ecomerce.svg",
+    href: "/",
   },
   {
     id: 1,
@@ -142,6 +144,7 @@ export const OUR_SERVICES: OurServiceCard[] = [
       en: "We craft intuitive and engaging user interfaces (UI) and user experiences (UX) that enhance customer satisfaction and drive business growth.",
     },
     image: "/services-usxdesign.svg",
+    href: ROUTES.uxDesign,
   },
   {
     id: 2,
@@ -154,6 +157,7 @@ export const OUR_SERVICES: OurServiceCard[] = [
       en: "We build websites that are not only beautiful but also functional and search engine optimized to help you achieve your business goals.",
     },
     image: "/services-website.svg",
+    href: "/",
   },
   {
     id: 3,
@@ -166,6 +170,7 @@ export const OUR_SERVICES: OurServiceCard[] = [
       en: "We develop native and hybrid mobile apps that deliver exceptional and engaging user experiences.",
     },
     image: "/services-mobileapp.svg",
+    href: "/",
   },
   {
     id: 4,
@@ -178,6 +183,7 @@ export const OUR_SERVICES: OurServiceCard[] = [
       en: "We develop custom web applications tailored to your specific business needs, ensuring seamless and secure operation across all devices.",
     },
     image: "/services-webapp.svg",
+    href: "/",
   },
   {
     id: 4,
@@ -190,5 +196,42 @@ export const OUR_SERVICES: OurServiceCard[] = [
       en: "We provide comprehensive analytics solutions that help you understand user behavior, optimize marketing campaigns, and boost your ROI.",
     },
     image: "/services-analytics.svg",
+    href: "/",
+  },
+];
+
+export const UxTimelineData = [
+  {
+    name: {
+      pl: "BADANIA",
+      en: "RESEARCH",
+    },
+    description: {
+      pl: "Badania UX polegają na zbieraniu informacji o zachowaniach użytkowników, ich potrzebach i motywacjach za pomocą takich technik jak wywiady, ankiety i testy użyteczności. Pomaga to zidentyfikować problemy i obszary do poprawy. Dzięki zastosowaniu tych informacji projektanci mogą tworzyć bardziej efektywne i satysfakcjonujące doświadczenia użytkowników.",
+      en: "UX research involves gathering insights about users' behaviors, needs, and motivations through techniques like interviews, surveys, and usability testing. Helps identify pain points and areas for improvement. By applying insights, designers can create more effective and satisfying user experiences.",
+    },
+    image: "/offer-ux-research.svg",
+  },
+  {
+    name: {
+      pl: "PROJEKTOWANIE UX",
+      en: "UX DESIGN",
+    },
+    description: {
+      pl: "Projektowanie UX, oparte na badaniach, koncentruje się na tworzeniu przyjaznych i przyjemnych doświadczeń dla użytkowników. Analizując dane z badań użytkowników, projektanci uzyskują wgląd w potrzeby i zachowania użytkowników. Te informacje kierują procesem projektowania, co skutkuje intuicyjnymi interfejsami, które zwiększają satysfakcję i zaangażowanie użytkowników.",
+      en: "UX design, informed by research, focuses on creating user-friendly and enjoyable experiences. By analyzing data from user research, designers gain insights into user needs and behaviors. These insights guide the design process, resulting in intuitive interfaces that enhance user satisfaction and engagement.",
+    },
+    image: "/offer-ux-uxdesign.svg",
+  },
+  {
+    name: {
+      pl: "UTRZYMANIE",
+      en: "MAINTENANCE",
+    },
+    description: {
+      pl: "Utrzymanie w projektowaniu UX polega na ciągłym monitorowaniu i optymalizowaniu doświadczeń użytkowników produktu lub usługi po ich początkowym wprowadzeniu. Obejmuje zbieranie opinii od użytkowników, analizowanie metryk i rozwiązywanie wszelkich problemów lub aktualizacji, które się pojawiają. Dzięki utrzymaniu projektanci zapewniają, że produkt pozostaje efektywny i przyjemny dla użytkowników, co sprzyja długoterminowej satysfakcji i lojalności.",
+      en: "Maintenance in UX design involves continuously monitoring and optimizing the user experience of a product or service after its initial launch. It includes gathering feedback from users, analyzing metrics, and addressing any issues or updates that arise. By maintaining, designers ensure that the product remains effective and enjoyable for users, thereby fostering long-term satisfaction and loyalty.",
+    },
+    image: "/offer-ux-maintenance.svg",
   },
 ];

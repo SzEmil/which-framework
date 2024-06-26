@@ -36,7 +36,7 @@ export type ProjectCard = {
   images: string[];
   baner: string;
   color: string;
-  formImage: string
+  formImage: string;
 };
 
 export type OurServiceCard = {
@@ -50,6 +50,7 @@ export type OurServiceCard = {
     en: string;
   };
   image: string;
+  href: string;
 };
 
 export type LangType = "pl" | "en";

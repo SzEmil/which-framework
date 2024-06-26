@@ -1,6 +1,6 @@
 import { getLanguagesStaticParams } from '@/i18n/helpers';
 import { I18nProps } from '@/types/types';
-import { Container } from '@mantine/core';
+import { Box, Container } from '@mantine/core';
 import React, { ReactNode } from 'react';
 
 export const generateStaticParams = getLanguagesStaticParams;
@@ -11,7 +11,7 @@ type ProductsLayoutProps = {
 };
 
 const OfferLayout = ({ children, params: { lang } }: ProductsLayoutProps) => {
-  return <Container pt={70}>{children}</Container>;
+  return <Box>{children}</Box>;
 };
 
 export default OfferLayout;
